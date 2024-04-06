@@ -6,6 +6,12 @@
   --primary: #ffffff;
   --secondary: #0174e9;
   --black: #000000;
+  --font-peugeot-regular: url("../public/peugeot/PeugeotRegular.otf")
+    format("woff");
+  --font-peugeot-bold: url("../public/peugeot/PeugeotBold.otf") format("woff");
+  --font-peugeot-italic: url("../public/peugeot/PeugeotItalic.otf")
+    format("woff");
+  --font-peugeot-light: url("../public/peugeot/PeugeotLight.otf") format("woff");
 }
 
 @font-face {
@@ -44,5 +50,12 @@
   font-size: 60px;
   color: white;
   line-height: 35px;
+  vertical-align: baseline;
+}
+.custom {
+  font-family: "peugeot Bold";
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 700;
   vertical-align: baseline;
 }
