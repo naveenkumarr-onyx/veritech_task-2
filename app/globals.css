@@ -3,31 +3,46 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --primary: #ffffff;
+  --secondary: #0174e9;
+  --black: #000000;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: "Peugeot Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Peugeot Regular"),
+    url("../public/peugeot/PeugeotRegular.otf") format("woff");
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: "Peugeot Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Peugeot Bold"),
+    url("../public/peugeot/PeugeotBold.otf") format("woff");
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@font-face {
+  font-family: "Peugeot Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Peugeot Italic"),
+    url("../public/peugeot/PeugeotItalic.otf") format("woff");
+}
+
+@font-face {
+  font-family: "Peugeot Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Peugeot Light"),
+    url("../public/peugeot/PeugeotLight.otf") format("woff");
+}
+.hell {
+  font-family: "Peugeot Regular";
+  font-size: 60px;
+  color: white;
+  line-height: 35px;
+  vertical-align: baseline;
 }

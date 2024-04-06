@@ -13,6 +13,17 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      textColor: {
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        customBlack: "var(--black)",
+      },
+      fontFamily: {
+        PeugeotBold: "var(--font-PeugeotBold)",
+        PeugeotLight: "var(--font-PeugeotLight)",
+        Peugeotltalic: "var(--font-Peugeotltalic)",
+        PeugeotRegular: "var(--font-PeugeotRegular)",
+      },
     },
   },
   plugins: [],
