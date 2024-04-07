@@ -13,16 +13,23 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      backgroundColor: {
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        customBlack: "var(--black)",
+      },
       textColor: {
         primary: "var(--primary)",
         secondary: "var(--secondary)",
         customBlack: "var(--black)",
       },
       fontFamily: {
-        customFont1: ["var(--font-peugeot-regular)", "sans-serif"],
-        customFont2: ["var(--font-peugeot-bold)", "serif"],
-        customFont3: ["var(--font-peugeot-italic)", "monospace"],
-        customFont4: ["var(--font-peugeot-light)", "sans-serif"],
+        inter: "var(--font-inter)",
+        robotomono: "var(--font-robotomono)",
+        montserrat: "var(--font-montserrat)",
+        mulish: "var(--font-mulish)",
+        lato: "var(--font-lato)",
+        roboto: "var(--font-roboto)",
       },
     },
   },

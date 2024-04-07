@@ -6,56 +6,36 @@
   --primary: #ffffff;
   --secondary: #0174e9;
   --black: #000000;
-  --font-peugeot-regular: url("../public/peugeot/PeugeotRegular.otf")
-    format("woff");
-  --font-peugeot-bold: url("../public/peugeot/PeugeotBold.otf") format("woff");
-  --font-peugeot-italic: url("../public/peugeot/PeugeotItalic.otf")
-    format("woff");
-  --font-peugeot-light: url("../public/peugeot/PeugeotLight.otf") format("woff");
 }
-
 @font-face {
-  font-family: "Peugeot Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Peugeot Regular"),
-    url("../public/peugeot/PeugeotRegular.otf") format("woff");
+  font-family: "peugeotBold";
+  src: url("../public/peugeot/PeugeotNewBold.otf") format("opentype");
 }
-
 @font-face {
-  font-family: "Peugeot Bold";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Peugeot Bold"),
-    url("../public/peugeot/PeugeotBold.otf") format("woff");
+  font-family: "peugeotRegular";
+  src: url("../public/peugeot/PeugeotNewRegular.otf") format("opentype");
 }
-
 @font-face {
-  font-family: "Peugeot Italic";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Peugeot Italic"),
-    url("../public/peugeot/PeugeotItalic.otf") format("woff");
+  font-family: "peugeotItalic";
+  src: url("../public/peugeot/PeugeotNewItalic.otf") format("opentype");
 }
-
 @font-face {
-  font-family: "Peugeot Light";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Peugeot Light"),
-    url("../public/peugeot/PeugeotLight.otf") format("woff");
+  font-family: "peugeotLight";
+  src: url("../public/peugeot/PeugeotNewLight.otf") format("opentype");
 }
-.hell {
-  font-family: "Peugeot Regular";
-  font-size: 60px;
-  color: white;
-  line-height: 35px;
-  vertical-align: baseline;
+/* @font-face {
+  font-family: "peugeotBoldItalic";
+  src: url("../public/peugeot/PeugeotNewBoldItalic.otf") format("opentype");
 }
-.custom {
-  font-family: "peugeot Bold";
-  font-size: 15px;
-  line-height: 15px;
-  font-weight: 700;
-  vertical-align: baseline;
+@font-face {
+  font-family: "peugeotLightItalic";
+  src: url("../public/peugeot/PeugeotNewLightItalic.otf") format("opentype");
 }
+@font-face {
+  font-family: "peugeotExtraLight";
+  src: url("../public/peugeot/PeugeotNewItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "peugeotLight";
+  src: url("../public/peugeot/PeugeotNewLight.otf") format("opentype");
+} */
