@@ -53,7 +53,7 @@ const LandingPage = () => {
               UNIQUE SENSATIONS
             </h2>
           </div>
-          <div className=" flex flex-col gap-4 font-robotomono">
+          <div className=" flex flex-col gap-4 font-mulish ">
             <div className=" flex flex-col gap-3">
               <p className="w-[500px]">
                 Switch to electric today. The E-308 is available with{" "}

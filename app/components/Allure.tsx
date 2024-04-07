@@ -11,7 +11,7 @@ const Allure = () => {
         <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl max-sm:text-lg font-roboto tracking-wide leading-[2px]">
           ALLURE
         </h1>
-        <p className="font-robotomono leading-7">
+        <p className="font-mulish leading-7">
           With its radical design, its sharp lines, the compact Peugeot 308
           hatchback stands out at first glance.
           <br /> Powerful and athletic, it asserts its character and makes an

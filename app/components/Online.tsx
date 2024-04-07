@@ -12,7 +12,7 @@ const Online = () => {
         <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl max-sm:text-lg font-roboto tracking-wide leading-[2px]">
           WHY BUY ONLINE
         </h1>
-        <div className="font-robotomono flex flex-col gap-1">
+        <div className="font-mulish  flex flex-col gap-1">
           <p>Get Peugeot peace of mind when you order online.</p>
           <p>
             Design your new car all the way through to securing finance from the

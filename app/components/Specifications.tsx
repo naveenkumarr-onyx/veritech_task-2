@@ -15,7 +15,7 @@ const Specifications = () => {
             AS UNIQUE AS YOU ARE
           </h2>
         </div>
-        <div className=" text-center font-robotomono leading-[25px]">
+        <div className=" text-center font-mulish  leading-[25px]">
           <p>
             Discover the magnetic Peugeot 308. Stunning design, uncompromising
             quality and a dynamic drive.
@@ -37,7 +37,7 @@ const Specifications = () => {
               <span className="border-b-2">SPECIFICATIONS</span>
             </h1>
           </div>
-          <div className="max-w-full md:max-w-[500px] font-robotomono flex flex-col gap-4">
+          <div className="max-w-full md:max-w-[500px] font-mulish  flex flex-col gap-4">
             <p className=" w-full">
               Available with <span className="font-lato">0%APR</span>,no
               minimumm deposit,and a <span className="font-lato">£1,500</span>
