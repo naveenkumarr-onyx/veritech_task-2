@@ -12,7 +12,7 @@ const Allure = () => {
           ALLURE
         </h1>
         <p className="font-mulish leading-7">
-          With its radical design, its sharp lines, the compact Peugeot 308
+          With its radical design, its sharp lines, the compact Peugeot 508
           hatchback stands out at first glance.
           <br /> Powerful and athletic, it asserts its character and makes an
           impression with its LED lights displaying 3 claws.
