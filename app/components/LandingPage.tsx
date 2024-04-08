@@ -17,19 +17,17 @@ const LandingPage = () => {
       <div className="text-white">
         <div className="flex justify-between items-center p-1">
           <div className="flex flex-row justify-center items-center gap-3 sm:gap-6 p-2 font-roboto">
-            <div>
+            <div className=" max-sm:w-[150px]">
               <Image src={logo} alt="car-logo" width={90} height={30} />
             </div>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3 max-sm:hidden lg:block">
               <div className="flex flex-row gap-3 sm:gap-6">
                 <p>MODELS</p>
                 <p>ELECTRIC & HYBRID</p>
                 <p>BUY</p>
                 <p>BRAND/ABOUT US</p>
               </div>
-              <div>
-                <hr />
-              </div>
+              <hr className=" lg:block max-sm:visible" />
             </div>
           </div>
         </div>

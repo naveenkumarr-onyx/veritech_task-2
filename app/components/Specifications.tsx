@@ -1,9 +1,21 @@
 import React from "react";
 import Image from "next/image";
-import car1 from "../../public/images/UK_HQ_PEUGEOT_308-Masthead-Update_308-T4-1812024_750x1200-1.jpg";
+import car1 from "../../public/images/1103981.jpg";
 import car2 from "../../public/images/1103984.jpg";
+import car3 from "../../public/images/994361.jpg";
 
 const Specifications = () => {
+  const icontainer: any = [
+    {
+      src: car1,
+    },
+    {
+      src: car2,
+    },
+    {
+      src: car3,
+    },
+  ];
   return (
     <div className=" flex flex-col py-[10px] gap-9 px-10">
       <div className=" flex flex-col gap-10">

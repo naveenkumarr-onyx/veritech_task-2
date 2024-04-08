@@ -1,5 +1,7 @@
 import Allure from "./components/Allure";
+import Excellence from "./components/Excellence";
 import Footer from "./components/Footer";
+import Heading from "./components/Heading";
 import LandingPage from "./components/LandingPage";
 import Online from "./components/Online";
 import Specifications from "./components/Specifications";
@@ -12,7 +14,9 @@ export default function Home() {
       <Specifications />
       <Online />
       <Allure />
+      <Excellence />
       <Footer />
+      {/* <Heading title="HELLO" /> */}
     </div>
   );
 }

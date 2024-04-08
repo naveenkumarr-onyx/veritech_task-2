@@ -4,14 +4,13 @@ import offer from "../../public/images/Offers.png";
 import delivery from "../../public/images/delivery.png";
 import support from "../../public/images/support.png";
 import peugeotCare from "../../public/images/repair.png";
+import Heading from "./Heading";
 
 const Online = () => {
   return (
     <div className=" flex flex-col  px-11 gap-11">
       <div className="text-center flex flex-col gap-1">
-        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl max-sm:text-lg font-roboto tracking-wide leading-[2px]">
-          WHY BUY ONLINE
-        </h1>
+        <Heading title="WHY BUY ONLINE" />
         <div className="font-mulish  flex flex-col gap-1">
           <p>Get Peugeot peace of mind when you order online.</p>
           <p>
