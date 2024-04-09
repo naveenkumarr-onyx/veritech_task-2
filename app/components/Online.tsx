@@ -8,7 +8,7 @@ import Heading from "./Heading";
 
 const Online = () => {
   return (
-    <div className=" flex flex-col  px-11 gap-11">
+    <div className=" flex flex-col px-11 gap-11 items-center">
       <div className="text-center flex flex-col gap-1">
         <Heading title="WHY BUY ONLINE" />
         <div className="font-mulish  flex flex-col gap-1">
@@ -19,7 +19,7 @@ const Online = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-center">
+      <div className="grid grid-flow-row grid-cols-4  max-md:grid-cols-2 max-sm:grid-cols-1 justify-center items-center">
         <div className="max-w-[300px] flex flex-col gap-6 p-3">
           <div className=" flex flex-col items-center gap-2">
             <Image src={offer} width={90} height={50} alt="offer" />

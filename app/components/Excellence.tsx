@@ -24,7 +24,7 @@ const Excellence = () => {
           <br /> Everything offers you a new experience.
         </p>
       </div>
-      <div className="flex flex-row max-sm:flex-col max-sm:w-full justify-between lg:gap-5 max-sm:gap-7">
+      <div className="flex flex-row max-md:flex-col max-md:gap-4 max-sm:flex-col max-sm:w-full justify-between lg:gap-5 max-sm:gap-7">
         <div className="flex items-center text-center lg:w-[40%] max-sm:p-2">
           {icontainer.map((value: any, index: any) => {
             return (
@@ -72,7 +72,7 @@ const Excellence = () => {
             );
           })}
         </div>
-        <div className="lg:w-full  max-sm:w-full relative">
+        <div className="flex flex-row lg:w-full  max-sm:w-full relative">
           <BsArrowLeftSquareFill
             className="absolute text-white max-sm:text-2xl max-sm:left-[1px] text-4xl lg:top-[260px] max-sm:top-[100px] cursor-pointer"
             onClick={prev}
