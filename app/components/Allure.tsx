@@ -17,11 +17,11 @@ const Allure = () => {
           impression with its LED lights displaying 3 claws.
         </p>
       </div>
-      <div className="flex flex-col items-center gap-4">
+      <div className="flex flex-col items-center gap-1">
         <div>
           <Image src={i3} width={900} height={300} alt="interior" />
         </div>
-        <div className="flex flex-row max-md:flex-col gap-3 ">
+        <div className="flex flex-row max-md:flex-col gap-1 ">
           <Image src={i2} width={700} height={300} alt="interior" />
           <Image src={i1} width={700} height={300} alt="interior" />
         </div>

@@ -9,7 +9,7 @@ import Tesing from "./components/Tesing";
 
 export default function Home() {
   return (
-    <div className=" flex flex-col gap-[30px]">
+    <div className=" flex flex-col gap-8 max-sm:gap-5">
       <LandingPage />
       <Specifications />
       <Online />

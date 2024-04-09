@@ -5,7 +5,7 @@ import logo from "../../public/images/peugeot-logo-alt.png";
 const LandingPage = () => {
   return (
     <div
-      className="min-h-screen px-4 sm:px-10 py-10 sm:py-20"
+      className="min-h-screen max-sm:h-full px-4 sm:px-10 py-10 sm:py-20"
       style={{
         backgroundImage:
           "url('https://images5.alphacoders.com/994/994370.jpg')",
@@ -14,11 +14,13 @@ const LandingPage = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="text-white">
-        <div className="flex justify-between items-center p-1">
-          <div className="flex flex-row justify-center items-center gap-3 sm:gap-6 p-2 font-roboto">
-            <div className=" max-sm:w-[150px]">
-              <Image src={logo} alt="car-logo" width={90} height={30} />
+      <div className="text-white max-sm:px-1 max-sm:overflow-hidden">
+        <div className="flex justify-between items-center lg:p-1">
+          <div className="flex flex-row justify-center items-center gap-3 sm:gap-6 lg:p-2  font-roboto">
+            <div className="max-sm:w-[329px] gap-1 flex flex-row items-center">
+              <div className="lg:hidden max-sm:block bg-white max-sm:w-full h-[2px] "></div>
+              <Image src={logo} alt="car-logo" width={90} height={90} />
+              <div className="lg:hidden max-sm:block bg-white max-sm:w-full h-[2px]"></div>
             </div>
             <div className="flex flex-col gap-3 max-sm:hidden lg:block">
               <div className="flex flex-row gap-3 sm:gap-6">

@@ -4,7 +4,7 @@ import logo from "../../public/images/peugeot-logo-alt.png";
 
 const Footer = () => {
   return (
-    <div className=" bg-black p-6  flex flex-col items-center gap-3 max-sm:gap-5">
+    <div className="bg-black p-6  flex flex-col items-center gap-3 max-sm:gap-5">
       <div className="text-primary flex justify-end w-full">
         <h1 className=" font-roboto">FOLLOW PEUGEOT</h1>
       </div>
