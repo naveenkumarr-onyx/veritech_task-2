@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { montserrat, inter, robotomono, mulish, lato, roboto } from "./font";
 import "./globals.css";
 
-// const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
   title: "Car Revealing",
   description: "Developed by Nav.dev",
