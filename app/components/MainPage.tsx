@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import logo from "../../public/images/peugeot-logo-alt.png";
 import React from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
@@ -8,21 +7,26 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 
 const MainPage = () => {
-  var myStyle = {
-    backgroundImage:
-      "url(https://res.cloudinary.com/dfhew0ljw/image/upload/v1712668656/bg_scixmy.jpg)",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  };
   return (
     <div
       className="min-h-screen p-8 max-sm:p-4 grid grid-flow-col grid-rows-2"
-      style={myStyle}
+      style={{
+        backgroundImage:
+          "url(https://res.cloudinary.com/dfhew0ljw/image/upload/v1712668656/bg_scixmy.jpg)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
     >
       <div className="flex flex-row justify-between">
         <div>
-          <Image src={logo} height={100} width={100} alt="logo" />
+          <Image
+            src="https://res.cloudinary.com/dfhew0ljw/image/upload/v1712848511/peugeot-logo-alt_ppjjak.png"
+            height={100}
+            width={100}
+            alt="logo"
+            priority
+          />
         </div>
         <div
           className="text-white flex gap-9 font-roboto flex-row  max-sm:hidden "

@@ -14,7 +14,7 @@ const Specifications = () => {
     setSlideChange((slideChange - 1 + icontainer2.length) % icontainer2.length);
   };
   return (
-    <div className="flex flex-col py-[10px] gap-9 lg:px-10  max-sm:px-4">
+    <div className="flex flex-col py-[10px] gap-9 lg:px-10 max-md:px-9  max-sm:px-4">
       <div className="text-center leading-[50px]">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-secondary font-roboto tracking-wide leading-none">
           PEUGEOT 508{" "}
@@ -36,12 +36,8 @@ const Specifications = () => {
       </div>
       <div className="flex flex-col gap-7 md:flex-row md:gap-10">
         <div className="relative">
-          <BsArrowLeftSquareFill
-            className="absolute text-white max-sm:text-2xl max-sm:left-[1px] text-4xl lg:top-[215px] max-sm:top-[80px] cursor-pointer"
-            onClick={prev}
-          />
           <div className="lg:h-full">
-            {icontainer2.map((value, index) => (
+            {icontainer2.map((value: any, index: any) => (
               <div
                 key={index}
                 className={`max-sm:w-full  ${
@@ -51,16 +47,23 @@ const Specifications = () => {
                 <Image
                   src={value.src}
                   width={800}
-                  height={800}
+                  height={1000}
+                  quality={100}
+                  priority
+                  layout="fixed"
+                  loading="eager"
                   alt="Spec"
                   className={`${slideChange === index ? "block" : "hidden"}`}
                 />
               </div>
             ))}
           </div>
-
+          <BsArrowLeftSquareFill
+            className="absolute text-white max-md:top-[150px]  max-sm:text-2xl max-sm:left-[1px] text-4xl lg:top-[215px] max-sm:top-[80px] cursor-pointer"
+            onClick={prev}
+          />
           <BsArrowRightSquareFill
-            className="absolute text-4xl max-sm:text-2xl lg:right-0 lg:top-[215px] max-sm:top-[80px] max-sm:right-[1px] text-white cursor-pointer"
+            className="absolute text-4xl max-sm:text-2xl lg:right-0 max-md:right-0 max-md:top-[150px] bg-red-950 lg:top-[215px] max-sm:top-[80px] max-sm:right-[1px] text-white cursor-pointer"
             onClick={next}
           />
         </div>
@@ -68,7 +71,7 @@ const Specifications = () => {
           <div className="text-center text-xl font-roboto">
             <Heading title="SPECIFICATIONS" />
           </div>
-          <div className="max-w-full md:max-w-[500px] font-mulish flex flex-col gap-4">
+          <div className="font-mulish flex flex-col gap-4">
             <p className="w-full">
               Available with <span className="font-lato">0%APR</span>, no
               minimum deposit, and a <span className="font-lato">£1,500</span>

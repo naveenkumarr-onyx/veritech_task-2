@@ -8,6 +8,7 @@ import { BsArrowLeftSquareFill, BsArrowRightSquareFill } from "react-icons/bs";
 
 const Excellence = () => {
   const [slideChange, setSlideChange] = useState(0);
+  const [imageLoader, setImageLoader] = useState(false);
   const next = () => {
     setSlideChange((slideChange + 1) % icontainer.length);
   };
@@ -72,9 +73,9 @@ const Excellence = () => {
             );
           })}
         </div>
-        <div className="flex flex-row lg:w-full  max-sm:w-full relative">
+        <div className="flex flex-row lg:w-full max-sm:w-full relative">
           <BsArrowLeftSquareFill
-            className="absolute text-white max-sm:text-2xl max-sm:left-[1px] text-4xl lg:top-[260px] max-sm:top-[100px] cursor-pointer"
+            className="absolute text-white lg:top-[260px] max-md:top-[150px] max-sm:text-2xl max-sm:left-[1px] text-4xl  max-sm:top-[100px] cursor-pointer"
             onClick={prev}
           />
           {icontainer.map((value: any, index: any) => {
@@ -83,17 +84,19 @@ const Excellence = () => {
                 <Image
                   src={value.src}
                   width={1000}
-                  height={1000}
+                  height={2000}
                   alt="ex-i"
-                  className={`${
-                    slideChange === index ? "block duration-1000" : "hidden"
-                  } `}
+                  quality={100}
+                  layout="fixed"
+                  loading="eager"
+                  priority
+                  className={` ${slideChange === index ? "block" : "hidden"} `}
                 />
               </div>
             );
           })}
           <BsArrowRightSquareFill
-            className="absolute text-4xl max-sm:text-2xl lg:right-0 lg:top-[260px] max-sm:top-[100px] max-sm:right-[1px] text-white cursor-pointer"
+            className="absolute text-4xl max-sm:text-2xl lg:right-0 lg:top-[260px] max-md:right-0 max-md:top-[150px] max-sm:top-[100px] max-sm:right-[1px] text-white cursor-pointer"
             onClick={next}
           />
         </div>

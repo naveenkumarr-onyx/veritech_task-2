@@ -19,7 +19,7 @@ const Online = () => {
           </p>
         </div>
       </div>
-      <div className="grid grid-flow-row grid-cols-4  max-md:grid-cols-2 max-sm:grid-cols-1 justify-center items-center">
+      <div className="grid grid-flow-col grid-rows-2 lg:grid-rows-1  max-md:grid-rows-2 max-sm:grid-rows-4 justify-center items-center">
         <div className="max-w-[300px] flex flex-col gap-6 p-3">
           <div className=" flex flex-col items-center gap-2">
             <Image src={offer} width={90} height={50} alt="offer" />

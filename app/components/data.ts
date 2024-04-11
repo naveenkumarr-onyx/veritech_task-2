@@ -1,13 +1,6 @@
-import i1 from "../../public/images/Showroom_308_D_Excellence_1.png";
-import i2 from "../../public/images/Showroom_308_D_Excellence_2.png";
-import i3 from "../../public/images/Showroom_308_D_Excellence_3.png";
-import car1 from "../../public/images/1103981.jpg";
-import car2 from "../../public/images/1103984.jpg";
-import car3 from "../../public/images/1103978.jpg";
-
 export const icontainer: any = [
   {
-    src: i1,
+    src: "https://res.cloudinary.com/dfhew0ljw/image/upload/v1712848512/Showroom_308_D_Excellence_1_sxzbig.png",
     Heading: "PEUGEOT I-CONNECT ADVANCED",
     subHeading:
       "The new PEUGEOT i-Connect function makes your interaction fluid",
@@ -18,7 +11,7 @@ export const icontainer: any = [
     ],
   },
   {
-    src: i2,
+    src: "https://res.cloudinary.com/dfhew0ljw/image/upload/v1712848512/Showroom_308_D_Excellence_3_prbh9d.png",
     Heading: "SERENE ATMOSPHERE",
     subHeading:
       "Expereince a new definition of well being on board the PEUGEOT 508 With:",
@@ -29,7 +22,7 @@ export const icontainer: any = [
     ],
   },
   {
-    src: i3,
+    src: "https://res.cloudinary.com/dfhew0ljw/image/upload/v1712848514/Showroom_308_D_Excellence_2_cjoicl.png",
     Heading: "TOP-OF-THE-RANGE-COMFORT",
     subHeading:
       "Enjoy generous spaciousness and optimum comfort in the front and rear",
@@ -38,4 +31,14 @@ export const icontainer: any = [
     ],
   },
 ];
-export const icontainer2 = [{ src: car1 }, { src: car2 }, { src: car3 }];
+export const icontainer2: any = [
+  {
+    src: "https://res.cloudinary.com/dfhew0ljw/image/upload/v1712848510/1103984_ulx1oj.jpg",
+  },
+  {
+    src: "https://res.cloudinary.com/dfhew0ljw/image/upload/v1712848509/1103981_vbdifg.jpg",
+  },
+  {
+    src: "https://res.cloudinary.com/dfhew0ljw/image/upload/v1712848509/1103978_kukyvr.jpg",
+  },
+];
