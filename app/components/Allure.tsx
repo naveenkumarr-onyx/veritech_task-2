@@ -19,11 +19,35 @@ const Allure = () => {
       </div>
       <div className="flex flex-col items-center gap-1">
         <div>
-          <Image src={i3} width={900} height={300} alt="interior" />
+          <Image
+            src={i3}
+            width={900}
+            height={300}
+            alt="interior"
+            priority
+            loading="eager"
+            layout="fixed"
+          />
         </div>
         <div className="flex flex-row max-md:flex-col gap-1 ">
-          <Image src={i2} width={700} height={300} alt="interior" />
-          <Image src={i1} width={700} height={300} alt="interior" />
+          <Image
+            src={i2}
+            width={700}
+            height={300}
+            alt="interior"
+            priority
+            loading="eager"
+            layout="fixed"
+          />
+          <Image
+            src={i1}
+            width={700}
+            height={300}
+            alt="interior"
+            priority
+            loading="eager"
+            layout="fixed"
+          />
         </div>
       </div>
     </div>

@@ -7,7 +7,6 @@ import Allure from "../components/Allure";
 import Footer from "../components/Footer";
 
 const Home = () => {
-  var src: any = "../../public/images/1103981.jpg";
   return (
     <div className=" flex flex-col gap-8 max-sm:gap-5">
       <LandingPage />
