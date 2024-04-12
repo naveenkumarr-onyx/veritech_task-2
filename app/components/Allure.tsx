@@ -26,7 +26,6 @@ const Allure = () => {
             alt="interior"
             priority
             loading="eager"
-            layout="fixed"
           />
         </div>
         <div className="flex flex-row max-md:flex-col gap-1 ">
@@ -37,7 +36,6 @@ const Allure = () => {
             alt="interior"
             priority
             loading="eager"
-            layout="fixed"
           />
           <Image
             src={i1}
@@ -46,7 +44,6 @@ const Allure = () => {
             alt="interior"
             priority
             loading="eager"
-            layout="fixed"
           />
         </div>
       </div>

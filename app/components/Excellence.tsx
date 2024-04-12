@@ -87,7 +87,6 @@ const Excellence = () => {
                   height={2000}
                   alt="ex-i"
                   quality={100}
-                  layout="fixed"
                   loading="eager"
                   priority
                   className={` ${slideChange === index ? "block" : "hidden"} `}

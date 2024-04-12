@@ -5,7 +5,7 @@
 :root {
   --primary: #ffffff;
   --secondary: #0174e9;
-  --black: #000000;
+  --customBlack: #050404;
 }
 @font-face {
   font-family: "peugeotBold";

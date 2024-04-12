@@ -23,7 +23,7 @@ const Specifications = () => {
           AS UNIQUE AS YOU ARE
         </h2>
       </div>
-      <div className="text-center font-mulish leading-[25px]">
+      <div className="text-center font-mulish leading-[25px] text-customBlack ">
         <p>
           Discover the magnetic Peugeot 308. Stunning design, uncompromising
           quality and a dynamic drive.
@@ -50,7 +50,6 @@ const Specifications = () => {
                   height={1000}
                   quality={100}
                   priority
-                  layout="fixed"
                   loading="eager"
                   alt="Spec"
                   className={`${slideChange === index ? "block" : "hidden"}`}

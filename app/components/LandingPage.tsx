@@ -14,16 +14,15 @@ const LandingPage = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="text-white max-sm:px-1 max-sm:overflow-hidden">
+      <div className="text-white max-sm:px-1 max-md:gap-11 max-sm:overflow-hidden">
         <div className="flex justify-between items-center lg:p-1">
-          <div className="flex flex-row justify-center items-center gap-3 sm:gap-6 lg:p-2  font-roboto">
+          <div className="flex flex-row justify-center items-center gap-3 sm:gap-6 lg:p-2 max-md:px-3  font-roboto">
             <div className="max-sm:w-[329px] gap-1 flex flex-row items-center">
               <Image
                 src={logo}
                 alt="car-logo"
                 width={100}
                 height={90}
-                layout="fixed"
                 priority
                 quality={100}
               />

@@ -17,7 +17,7 @@ const config: Config = {
       backgroundColor: {
         primary: "var(--primary)",
         secondary: "var(--secondary)",
-        customBlack: "var(--black)",
+        customBlack: "var(--customblack)",
       },
       textColor: {
         primary: "var(--primary)",
