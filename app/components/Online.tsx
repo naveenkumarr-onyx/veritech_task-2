@@ -8,7 +8,7 @@ import Heading from "./Heading";
 
 const Online = () => {
   return (
-    <div className=" flex flex-col px-11 gap-11 items-center">
+    <div className="flex flex-col px-11 gap-11 items-center">
       <div className="text-center flex flex-col gap-1">
         <Heading title="WHY BUY ONLINE" />
         <div className="font-mulish  flex flex-col gap-1">

@@ -76,7 +76,7 @@ const Specifications = () => {
               minimum deposit, and a <span className="font-lato">£1,500</span>
               <span className="font-lato"> Switch Grant(4)</span>
             </p>
-            <ul className=" max-sm:px-5 list-disc flex flex-col leading-[25px]">
+            <ul className="max-sm:px-5 list-disc flex flex-col leading-[25px]">
               <li>100% electric driving range: Up to 257 miles WLTP</li>
               <li>Charging time: 100 km in 12 min</li>
               <li>CO2 emissions whilst driving: 0 g/km</li>

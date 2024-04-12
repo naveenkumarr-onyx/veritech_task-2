@@ -7,7 +7,7 @@ import Heading from "./Heading";
 
 const Allure = () => {
   return (
-    <div className=" flex flex-col gap-4">
+    <div className="flex flex-col gap-4">
       <div className="text-center flex flex-col gap-1">
         <Heading title="ALLURE" />
         <p className="font-mulish leading-7">

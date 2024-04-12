@@ -47,12 +47,12 @@ const MainPage = () => {
         </div>
       </div>
       <div className="flex flex-col">
-        <div className=" flex flex-col gap-1">
-          <h1 className=" font-roboto text-white text-3xl">
+        <div className="flex flex-col gap-1">
+          <h1 className="font-roboto text-white text-3xl">
             Powerful , Fun and
           </h1>
-          <h1 className=" text-2xl text-white">FIERCE TO</h1>
-          <span className=" text-7xl font-roboto text-red-700">DRIVE</span>
+          <h1 className="text-2xl text-white">FIERCE TO</h1>
+          <span className="text-7xl font-roboto text-red-700">DRIVE</span>
           <h1 className="leading-10 text-lg text-white">
             Real Power,Real Performance
           </h1>

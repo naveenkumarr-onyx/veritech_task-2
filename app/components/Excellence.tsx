@@ -17,7 +17,7 @@ const Excellence = () => {
   };
   return (
     <div className="lg:max-h-full flex flex-col px-12 max-sm:px-1 gap-9">
-      <div className=" flex flex-col items-center">
+      <div className="flex flex-col items-center">
         <Heading title="EXCELLENCE" />
         <p className=" font-mulish text-center">
           Choice of materials, design, connected equipment, engine, comfort, the
@@ -39,7 +39,9 @@ const Excellence = () => {
                     )}
                   </h1>
                   <h1 className="text-secondary">
-                    {slideChange === index ? `${index}/3` : ""}
+                    {slideChange === index
+                      ? `${index}/${icontainer.length}`
+                      : ""}
                   </h1>
                   <h1 onClick={next} className="cursor-pointer ">
                     {slideChange === index ? <IoIosArrowForward /> : ""}
@@ -80,22 +82,22 @@ const Excellence = () => {
           />
           {icontainer.map((value: any, index: any) => {
             return (
-              <div key={index}>
+              <div key={index} className="max-h-full">
                 <Image
                   src={value.src}
                   width={1000}
-                  height={2000}
+                  height={1200}
                   alt="ex-i"
                   quality={100}
                   loading="eager"
                   priority
-                  className={` ${slideChange === index ? "block" : "hidden"} `}
+                  className={` ${slideChange === index ? "block" : "hidden"}`}
                 />
               </div>
             );
           })}
           <BsArrowRightSquareFill
-            className="absolute text-4xl max-sm:text-2xl lg:right-0 lg:top-[260px] max-md:right-0 max-md:top-[150px] max-sm:top-[100px] max-sm:right-[1px] text-white cursor-pointer"
+            className="absolute text-4xl max-sm:text-2xl lg:right-[1px] lg:top-[260px] max-md:right-0 max-md:top-[150px] max-sm:top-[100px] max-sm:right-[1px] text-white cursor-pointer"
             onClick={next}
           />
         </div>

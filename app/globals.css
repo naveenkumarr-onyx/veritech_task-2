@@ -7,19 +7,3 @@
   --secondary: #0174e9;
   --customBlack: #050404;
 }
-@font-face {
-  font-family: "peugeotBold";
-  src: url("../public/peugeot/PeugeotNewBold.otf") format("opentype");
-}
-@font-face {
-  font-family: "peugeotRegular";
-  src: url("../public/peugeot/PeugeotNewRegular.otf") format("opentype");
-}
-@font-face {
-  font-family: "peugeotItalic";
-  src: url("../public/peugeot/PeugeotNewItalic.otf") format("opentype");
-}
-@font-face {
-  font-family: "peugeotLight";
-  src: url("../public/peugeot/PeugeotNewLight.otf") format("opentype");
-}
