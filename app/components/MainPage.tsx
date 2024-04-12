@@ -9,7 +9,7 @@ import Link from "next/link";
 const MainPage = () => {
   return (
     <div
-      className="min-h-screen p-8 max-sm:p-4 grid grid-flow-col grid-rows-2"
+      className="min-h-screen p-8 max-sm:p-4 grid grid-flow-col grid-rows-2 bg-green-400"
       style={{
         backgroundImage:
           "url(https://res.cloudinary.com/dfhew0ljw/image/upload/v1712668656/bg_scixmy.jpg)",
@@ -29,7 +29,7 @@ const MainPage = () => {
           />
         </div>
         <div
-          className="text-white flex gap-9 font-roboto flex-row  max-sm:hidden "
+          className="text-white cursor-pointer flex gap-9 font-roboto flex-row  max-sm:hidden "
           onClick={() => {
             alert("click reveal button");
           }}
@@ -37,6 +37,8 @@ const MainPage = () => {
           <h1>HOME</h1>
           <h1>ABOUT</h1>
           <h1>SPECIFICATIONS</h1>
+          <h1>MODELS</h1>
+          <h1>COMMUNITY</h1>
         </div>
         <div
           className="text-white flex flex-row gap-5  text-5xl"
@@ -47,15 +49,23 @@ const MainPage = () => {
         </div>
       </div>
       <div className="flex flex-col">
-        <div className="flex flex-col gap-1">
-          <h1 className="font-roboto text-white text-3xl">
-            Powerful , Fun and
-          </h1>
-          <h1 className="text-2xl text-white">FIERCE TO</h1>
-          <span className="text-7xl font-roboto text-red-700">DRIVE</span>
-          <h1 className="leading-10 text-lg text-white">
-            Real Power,Real Performance
-          </h1>
+        <div className="flex flex-col gap-3">
+          <div className="">
+            <h1 className="text-5xl font-roboto text-secondary">PUEOGOT-508</h1>
+            <h1 className="text-lg leading-[15px] tracking-widest  text-white">
+              UNIQUE SENSATIONS
+            </h1>
+          </div>
+          <div>
+            <h1 className="font-roboto text-white text-3xl">
+              Powerful , Fun and
+            </h1>
+            <h1 className="text-2xl text-white">FIERCE TO</h1>
+            <span className="text-7xl font-roboto text-red-700">DRIVE</span>
+            <h1 className="leading-10 text-lg text-white">
+              Real Power,Real Performance
+            </h1>
+          </div>
         </div>
         <div className="flex items-center animate-pulse">
           <Link

@@ -3,7 +3,7 @@ import { montserrat, inter, robotomono, mulish, lato, roboto } from "./font";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Car Revealing",
+  title: "PUEOGOT-508",
   description: "Developed by Nav.dev",
 };
 
