@@ -1,15 +1,21 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 
 const MainPage = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
+
   return (
     <div
-      className="min-h-screen p-8 max-sm:p-4 grid grid-flow-col grid-rows-2 bg-green-400"
+      className="min-h-screen p-8 max-sm:p-4 grid grid-flow-col grid-rows-2"
       style={{
         backgroundImage:
           "url(https://res.cloudinary.com/dfhew0ljw/image/upload/v1712668656/bg_scixmy.jpg)",
@@ -17,7 +23,13 @@ const MainPage = () => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
+      onLoad={handleImageLoad}
     >
+      {!imageLoaded && (
+        <div className="flex justify-center items-center w-full h-full fixed top-0 left-0 bg-gray-900 bg-opacity-50 z-50">
+          <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-gray-100"></div>
+        </div>
+      )}
       <div className="flex flex-row justify-between">
         <div>
           <Image
@@ -26,6 +38,7 @@ const MainPage = () => {
             width={100}
             alt="logo"
             priority
+            onLoad={handleImageLoad}
           />
         </div>
         <div
