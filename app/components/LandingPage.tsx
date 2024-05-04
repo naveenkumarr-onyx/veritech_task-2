@@ -1,8 +1,14 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../public/images/peugeot-logo-alt.png";
+import Loader from "./Loader";
 
 const LandingPage = () => {
+  const [imageLoader, setImageLoader] = useState(false);
+
+  const handleLoader = () => {
+    setImageLoader(true);
+  };
   return (
     <div
       className="min-h-screen lg:px-4 max-sm:px-2 py-10 sm:py-20"
@@ -13,7 +19,9 @@ const LandingPage = () => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
+      // onLoad={handleLoader}
     >
+      {!imageLoader && <Loader />}
       <div className="text-white max-sm:px-1 max-md:gap-11 max-sm:overflow-hidden">
         <div className="flex justify-between items-center lg:p-1">
           <div className="flex flex-row justify-center items-center gap-3 sm:gap-6 lg:p-2 max-md:px-3  font-roboto">
@@ -25,6 +33,7 @@ const LandingPage = () => {
                 height={90}
                 priority
                 quality={100}
+                onLoad={handleLoader}
               />
               <div className="lg:hidden max-sm:block bg-white max-sm:w-full h-[2px]"></div>
             </div>

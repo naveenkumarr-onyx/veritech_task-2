@@ -5,6 +5,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import Link from "next/link";
+import Loader from "./Loader";
 
 const MainPage = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -25,11 +26,7 @@ const MainPage = () => {
       }}
       onLoad={handleImageLoad}
     >
-      {!imageLoaded && (
-        <div className="flex justify-center items-center w-full h-full fixed top-0 left-0 bg-gray-900 bg-opacity-50 z-50">
-          <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-gray-100"></div>
-        </div>
-      )}
+      {!imageLoaded && <Loader />}
       <div className="flex flex-row justify-between">
         <div>
           <Image
