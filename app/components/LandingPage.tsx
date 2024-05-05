@@ -1,34 +1,42 @@
-import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../../public/images/peugeot-logo-alt.png";
 import Loader from "./Loader";
+import Image from "next/image";
 
 const LandingPage = () => {
-  const [imageLoader, setImageLoader] = useState(false);
-
+  const [imageLoaded, setImageLoaded] = useState(false);
   const handleLoader = () => {
-    setImageLoader(true);
+    // setImageLoaded(true);
   };
+
+  // useEffect(() => {
+  //   const backgroundImage = new Image();
+  //   backgroundImage.src = "https://images5.alphacoders.com/994/994370.jpg";
+  //   backgroundImage.onload = () => {
+  //     setImageLoaded(true);
+  //   };
+  // }, []);
+
   return (
     <div
       className="min-h-screen lg:px-4 max-sm:px-2 py-10 sm:py-20"
       style={{
-        backgroundImage:
-          "url('https://images5.alphacoders.com/994/994370.jpg')",
+        backgroundImage: `url('https://images5.alphacoders.com/994/994370.jpg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
       // onLoad={handleLoader}
     >
-      {!imageLoader && <Loader />}
+      {/* {!imageLoaded && <Loader />} */}
       <div className="text-white max-sm:px-1 max-md:gap-11 max-sm:overflow-hidden">
         <div className="flex justify-between items-center lg:p-1">
           <div className="flex flex-row justify-center items-center gap-3 sm:gap-6 lg:p-2 max-md:px-3  font-roboto">
             <div className="max-sm:w-[329px] gap-1 flex flex-row items-center">
+              {/* <img src={logo} alt="car-logo" className="w-[100px] h-[90px]" /> */}
               <Image
                 src={logo}
-                alt="car-logo"
+                alt=""
                 width={100}
                 height={90}
                 priority
@@ -38,7 +46,7 @@ const LandingPage = () => {
               <div className="lg:hidden max-sm:block bg-white max-sm:w-full h-[2px]"></div>
             </div>
             <div className="flex flex-col gap-3 max-sm:hidden lg:block">
-              <div className="flex flex-row gap-3 sm:gap-6">
+              <div className="flex flex-row gap-3 sm:gap-6 cursor-pointer">
                 <p>MODELS</p>
                 <p>ELECTRIC & HYBRID</p>
                 <p>BUY</p>
