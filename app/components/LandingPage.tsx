@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import logo from "../../public/images/peugeot-logo-alt.png";
 import Loader from "./Loader";
 import Image from "next/image";
@@ -6,16 +6,8 @@ import Image from "next/image";
 const LandingPage = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const handleLoader = () => {
-    // setImageLoaded(true);
+    setImageLoaded(true);
   };
-
-  // useEffect(() => {
-  //   const backgroundImage = new Image();
-  //   backgroundImage.src = "https://images5.alphacoders.com/994/994370.jpg";
-  //   backgroundImage.onload = () => {
-  //     setImageLoaded(true);
-  //   };
-  // }, []);
 
   return (
     <div
@@ -26,14 +18,12 @@ const LandingPage = () => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
-      // onLoad={handleLoader}
     >
-      {/* {!imageLoaded && <Loader />} */}
+      {!imageLoaded && <Loader />}
       <div className="text-white max-sm:px-1 max-md:gap-11 max-sm:overflow-hidden">
         <div className="flex justify-between items-center lg:p-1">
           <div className="flex flex-row justify-center items-center gap-3 sm:gap-6 lg:p-2 max-md:px-3  font-roboto">
             <div className="max-sm:w-[329px] gap-1 flex flex-row items-center">
-              {/* <img src={logo} alt="car-logo" className="w-[100px] h-[90px]" /> */}
               <Image
                 src={logo}
                 alt=""
